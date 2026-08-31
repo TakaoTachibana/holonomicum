@@ -1,0 +1,55 @@
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Shared Memory & Native Builds (C)
+test_shm
+*.o
+*.so
+*.a
+*.dylib
+*.dll
+*.exe
+# 除外しない共有ヘッダー (確認用)
+!include/*.h
+
+# Go
+/src/ingester/ingester
+/src/ingester/vendor/
+
+# .NET / C# (GatewayService)
+bin/
+obj/
+*.user
+*.userosscache
+*.sln.docstates
+# LLM Models (GGUFなど非常に重いファイルはリポジトリに入れない)
+*.gguf
+*.bin
+models/
+# LLamaSharp native runtimes (NuGetが解決するため除外)
+runtimes/
+
+# Node.js / React (Web UI)
+node_modules/
+/src/web/dist/
+/src/web/build/
+.env.local
+
+# R
+.Rproj.user/
+.Rhistory
+.Rdata
+.Ruserdata
+
+# Julia
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+Manifest.toml
+
+# Database & Logs
+*.log
