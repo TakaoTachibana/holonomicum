@@ -148,7 +148,7 @@ typedef struct {
 /* Size Verfication */
 _Static_assert(sizeof(Complex64) == 8, "Complex64 size must be 8 bytes");
 _Static_assert(sizeof(HeaderSection) == 512, "HeaderSection size mismatch");
-_Static_assert(sizeof(DensityMatrixSection) == 181072, "DensityMatrixSection size mismatch");
+_Static_assert(sizeof(DensityMatrixSection) == 131072, "DensityMatrixSection size mismatch");
 _Static_assert(sizeof(OperatorCoefficients) == 15872, "OperatorCoefficients size mismatch");
 _Static_assert(sizeof(ParticleOutputArea) == 16384, "ParticleOutputArea size mismatch");
 _Static_assert(sizeof(ComplexVectorSlot) == 1536, "ComplexVectorSlot size mismatch");
@@ -159,7 +159,7 @@ _Static_assert(offsetof(CytoplasmV5, density_matrix) == 0x00000200, "Offset dens
 _Static_assert(offsetof(CytoplasmV5, coefficients) == 0x00020200, "Offset coefficients mismatch");
 _Static_assert(offsetof(CytoplasmV5, particles_output) == 0x00024000, "Offset particles_output mismatch");
 _Static_assert(offsetof(CytoplasmV5, adjacency_matrix) == 0x00028000, "Offset adjacency_matrix mismatch");
-_Static_assert(offsetof(CytoplasmV5, vectors) == 0x00068000, "Offset vectors mismatch")
+_Static_assert(offsetof(CytoplasmV5, vectors) == 0x00068000, "Offset vectors mismatch");
 _Static_assert(offsetof(CytoplasmV5, text_lru) == 0x0C068000, "Offset text_lru mismatch");
 
 #ifdef __cplusplus
